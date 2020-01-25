@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
-
+    
     var body: some View {
         NavigationView {
             List(resorts) { resort in
@@ -33,8 +33,11 @@ struct ContentView: View {
                         Text("\(resort.runs) runs")
                             .foregroundColor(.secondary)
                     }
-               }
+                }
             }
+            .navigationBarTitle("Resorts")
+            
+            WelcomeView()
         }
     }
 }
