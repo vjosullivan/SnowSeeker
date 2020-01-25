@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ResortDetailView: View {
+struct ResortView: View {
 
     let resort: Resort
 
@@ -38,6 +38,6 @@ struct ResortDetailView: View {
 
 struct ResortDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ResortDetailView(resort: Resort.example)
+        ResortView(resort: Resort.example)
     }
 }
