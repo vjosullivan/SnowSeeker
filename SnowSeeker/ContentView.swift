@@ -16,6 +16,7 @@ struct ContentView: View {
         NavigationView {
             List(resorts) { resort in
                 NavigationLink(destination: Text(resort.name)) {
+                    Image(resort.country)
                     Text(resort.name)
                 }
             }
