@@ -17,8 +17,23 @@ struct ContentView: View {
             List(resorts) { resort in
                 NavigationLink(destination: Text(resort.name)) {
                     Image(resort.country)
-                    Text(resort.name)
-                }
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 39, height: 26)
+                        .clipShape(
+                            RoundedRectangle(cornerRadius: 5)
+                    )
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.black, lineWidth: 1)
+                    )
+                    VStack(alignment: .leading) {
+                        Text(resort.name)
+                            .font(.headline)
+                        Text("\(resort.runs) runs")
+                            .foregroundColor(.secondary)
+                    }
+               }
             }
         }
     }
