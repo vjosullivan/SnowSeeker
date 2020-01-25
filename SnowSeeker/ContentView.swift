@@ -16,15 +16,12 @@ struct ContentView: View {
         Group {
             // Layout responds to size class (.compact, .regular) changes.
             if sizeClass == .compact {
-                VStack {
-                    UserView()
-                }
+                // VStack (and HStack) can take paramaterless inits as parameter
+                // where the object is a View.
+                VStack(content: UserView.init)
             } else {
-                HStack {
-                    UserView()
-                }
-            }
-        }
+                HStack(content: UserView.init)
+            }        }
     }
 }
 
