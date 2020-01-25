@@ -10,10 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @Environment(\.horizontalSizeClass) var sizeClass
+    let resorts: [Resort] = Bundle.main.decode("resorts.json")
 
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List(resorts) { resort in
+                Text(resort.name)
+            }
+        }
     }
 }
 
