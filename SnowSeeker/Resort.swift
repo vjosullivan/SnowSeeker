@@ -20,4 +20,11 @@ struct Resort: Codable, Identifiable {
     let elevation: Int
     let runs: Int
     let facilities: [String]
+
+    // MARK: - Example instances of Resort.
+
+    static let allResorts: [Resort] = Bundle.main.decode("resorts.json")
+    //static let example = allResorts[0]
+    // One way of avoiding just having oine example...
+    static let example = allResorts.randomElement()
 }
