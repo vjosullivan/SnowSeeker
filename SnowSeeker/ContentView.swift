@@ -9,14 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var selectedUser: User = nil
+
     var body: some View {
-        NavigationView {
-            // Primary View linked to it's companion detail view.
-            NavigationLink(destination: Text("Detail View")) {
-                Text("Primary View")
-            }
-            .navigationBarTitle("Primary")
-            Text("Secondary View")
+        Text("Hello, World!")
+            .onTapGesture {
+                self.selectedUser = User()
+        }
+        .alert(item: $selectedUser) { user in
+            Alert(title: Text(user.id))
         }
     }
 }
