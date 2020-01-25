@@ -10,12 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-
-        // A simple example of showing primary and secondary views with Navigation View.
-        // Two views are required.
         NavigationView {
-            Text("Primary View")
-                .navigationBarTitle("Primary")
+            // Primary View linked to it's companion detail view.
+            NavigationLink(destination: Text("Detail View")) {
+                Text("Primary View")
+            }
+            .navigationBarTitle("Primary")
             Text("Secondary View")
         }
     }
