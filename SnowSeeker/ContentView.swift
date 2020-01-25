@@ -10,11 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State var layoutVertically = false
+    @Environment(\.horizontalSizeClass) var sizeClass
 
     var body: some View {
         Group {
-            if layoutVertically {
+            // Layout responds to size class (.compact, .regular) changes.
+            if sizeClass == .compact {
                 VStack {
                     UserView()
                 }
@@ -23,9 +24,6 @@ struct ContentView: View {
                     UserView()
                 }
             }
-        }
-        .onTapGesture {
-            self.layoutVertically.toggle()
         }
     }
 }
