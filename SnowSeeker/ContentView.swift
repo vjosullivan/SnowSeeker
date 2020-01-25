@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
-    
+
     var body: some View {
         NavigationView {
             List(resorts) { resort in
-                NavigationLink(destination: Text(resort.name)) {
+                NavigationLink(destination: ResortDetailView(resort: resort)) {
                     Image(resort.country)
                         .resizable()
                         .scaledToFit()
@@ -36,7 +36,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Resorts")
-            
+
             WelcomeView()
         }
     }

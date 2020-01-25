@@ -26,5 +26,5 @@ struct Resort: Codable, Identifiable {
     static let allResorts: [Resort] = Bundle.main.decode("resorts.json")
     //static let example = allResorts[0]
     // One way of avoiding just having one example...
-    static let example = allResorts.randomElement()
+    static let example = allResorts.randomElement()!
 }

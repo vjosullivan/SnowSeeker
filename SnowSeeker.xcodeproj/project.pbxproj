@@ -17,6 +17,7 @@
 		6159012323DC77270018F2BF /* ExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159012223DC77270018F2BF /* ExtensionBundle.swift */; };
 		6159012523DC79240018F2BF /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 6159012423DC79240018F2BF /* resorts.json */; };
 		6159012723DC7D710018F2BF /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159012623DC7D710018F2BF /* WelcomeView.swift */; };
+		6159012923DC7F160018F2BF /* ResortDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159012823DC7F160018F2BF /* ResortDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6159012223DC77270018F2BF /* ExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionBundle.swift; sourceTree = "<group>"; };
 		6159012423DC79240018F2BF /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
 		6159012623DC7D710018F2BF /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6159012823DC7F160018F2BF /* ResortDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				6159010A23DC68F80018F2BF /* SceneDelegate.swift */,
 				6159012623DC7D710018F2BF /* WelcomeView.swift */,
 				6159010C23DC68F80018F2BF /* ContentView.swift */,
+				6159012823DC7F160018F2BF /* ResortDetailView.swift */,
 				6159012023DC76A90018F2BF /* Resort.swift */,
 				6159012423DC79240018F2BF /* resorts.json */,
 				6159012223DC77270018F2BF /* ExtensionBundle.swift */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6159012923DC7F160018F2BF /* ResortDetailView.swift in Sources */,
 				6159010923DC68F80018F2BF /* AppDelegate.swift in Sources */,
 				6159012723DC7D710018F2BF /* WelcomeView.swift in Sources */,
 				6159010B23DC68F80018F2BF /* SceneDelegate.swift in Sources */,
