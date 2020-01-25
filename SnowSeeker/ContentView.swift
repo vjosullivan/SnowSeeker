@@ -15,7 +15,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(resorts) { resort in
-                Text(resort.name)
+                NavigationLink(destination: Text(resort.name)) {
+                    Text(resort.name)
+                }
             }
         }
     }
