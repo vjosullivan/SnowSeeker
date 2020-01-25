@@ -10,15 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State private var selectedUser: User = nil
+    @State var layoutVertically = false
 
     var body: some View {
-        Text("Hello, World!")
-            .onTapGesture {
-                self.selectedUser = User()
+        Group {
+            if layoutVertically {
+                VStack {
+                    UserView()
+                }
+            } else {
+                HStack {
+                    UserView()
+                }
+            }
         }
-        .alert(item: $selectedUser) { user in
-            Alert(title: Text(user.id))
+        .onTapGesture {
+            self.layoutVertically.toggle()
         }
     }
 }
