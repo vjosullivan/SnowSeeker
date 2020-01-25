@@ -13,7 +13,26 @@ struct ResortDetailView: View {
     let resort: Resort
 
     var body: some View {
-        Text(resort.name)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                Image(decorative: resort.id)
+                    .resizable()
+                    .scaledToFit()
+
+                Group {
+                    Text(resort.description)
+                        .padding(.vertical)
+
+                    Text("Facilities")
+                        .font(.headline)
+
+                    Text(resort.facilities.joined(separator: ", "))
+                        .padding(.vertical)
+                }
+                .padding(.horizontal)
+            }
+        }
+        .navigationBarTitle(Text("\(resort.name), \(resort.country)"), displayMode: .inline)
     }
 }
 
