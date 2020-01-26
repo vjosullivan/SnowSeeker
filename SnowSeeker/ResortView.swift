@@ -20,6 +20,12 @@ struct ResortView: View {
                     .scaledToFit()
 
                 Group {
+                    HStack {
+                        Spacer()
+                        ResortDetailsView(resort: resort)
+                        SkiDetailsView(resort: resort)
+                        Spacer()
+                    }
                     Text(resort.description)
                         .padding(.vertical)
 
