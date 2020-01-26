@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct SkiDetailsView: View {
+
+    let resort: Resort
+
     var body: some View {
-        Text("Ski Details View")
+        VStack {
+            Text("Elevation: \(resort.elevation)m")
+            Text("Snow: \(resort.snowDepth)cm")
+        }
     }
 }
 
 struct SkiDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        SkiDetailsView()
+        SkiDetailsView(resort: Resort.example)
     }
 }
