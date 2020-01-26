@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SkiDetailsView: View {
     var body: some View {
-        Text("Ski Details")
+        Text("Ski Details View")
     }
 }
 
