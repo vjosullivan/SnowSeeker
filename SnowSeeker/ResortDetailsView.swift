@@ -11,7 +11,7 @@ import SwiftUI
 struct ResortDetailsView: View {
     
     let resort: Resort
-    
+
     /// Returns a word describing the resort size.
     /// Expects the resort size as a number in the range 1...3.
     private var size: String {
