@@ -30,4 +30,22 @@ struct Facility {
             fatalError("Unknown facility type: \(facility)")
         }
     }
+
+    /// Returns an Alert with a description, corresponding to given String (or crashes).
+    /// - Parameter facility: A standard string describing a resort facility
+    static func alert(for facility: String) -> Alert {
+        let messages = [
+            "Accommodation": "This resort has popular on-site accommodation.",
+            "Beginners": "This resort has lots of ski schools.",
+            "Cross-country": "This resort has many cross-country ski routes.",
+            "Eco-friendly": "This resort has won an award for environmental friendliness.",
+            "Family": "This resort is popular with families."
+        ]
+
+        if let message = messages[facility] {
+            return Alert(title: Text(facility), message: Text(message))
+        } else {
+            fatalError("Unknown facility type: \(facility)")
+        }
+    }
 }

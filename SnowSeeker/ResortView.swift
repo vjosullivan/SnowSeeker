@@ -12,6 +12,8 @@ struct ResortView: View {
     
     @Environment(\.horizontalSizeClass) var sizeClass
     
+    @State private var selectedFacility: String?
+    
     let resort: Resort
     
     var body: some View {
@@ -51,6 +53,12 @@ struct ResortView: View {
                         ForEach(resort.facilities, id: \.self) { facility in
                             Facility.icon(for: facility)
                                 .font(.title)
+                                .onTapGesture {
+                                    self.selectedFacility = facility
+                            }
+                            .alert(item: self.$selectedFacility) { facility in
+                                Facility.alert(for: facility)
+                            }
                         }
                     }
                     .padding(.vertical)

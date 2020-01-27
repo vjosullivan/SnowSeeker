@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6133FBF423DEE0E600C1691D /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133FBF323DEE0E600C1691D /* Facility.swift */; };
+		6133FBF623DF02C900C1691D /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6133FBF523DF02C900C1691D /* ExtensionString.swift */; };
 		6159010923DC68F80018F2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159010823DC68F80018F2BF /* AppDelegate.swift */; };
 		6159010B23DC68F80018F2BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159010A23DC68F80018F2BF /* SceneDelegate.swift */; };
 		6159010D23DC68F80018F2BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159010C23DC68F80018F2BF /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		6133FBF323DEE0E600C1691D /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		6133FBF523DF02C900C1691D /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		6159010523DC68F80018F2BF /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6159010823DC68F80018F2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6159010A23DC68F80018F2BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				6133FBF323DEE0E600C1691D /* Facility.swift */,
 				6159012423DC79240018F2BF /* resorts.json */,
 				6159012223DC77270018F2BF /* ExtensionBundle.swift */,
+				6133FBF523DF02C900C1691D /* ExtensionString.swift */,
 				6159010E23DC68F90018F2BF /* Assets.xcassets */,
 				6159011323DC68F90018F2BF /* LaunchScreen.storyboard */,
 				6159011623DC68F90018F2BF /* Info.plist */,
@@ -178,6 +181,7 @@
 				6159010B23DC68F80018F2BF /* SceneDelegate.swift in Sources */,
 				6159012123DC76A90018F2BF /* Resort.swift in Sources */,
 				6159010D23DC68F80018F2BF /* ContentView.swift in Sources */,
+				6133FBF623DF02C900C1691D /* ExtensionString.swift in Sources */,
 				6159012F23DC87BC0018F2BF /* ResortDetailsView.swift in Sources */,
 				6159012323DC77270018F2BF /* ExtensionBundle.swift in Sources */,
 				6159012D23DC876E0018F2BF /* SkiDetailsView.swift in Sources */,
