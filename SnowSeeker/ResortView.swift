@@ -47,8 +47,13 @@ struct ResortView: View {
                     Text("Facilities")
                         .font(.headline)
                     
-                    Text(resort.facilities.joined(separator: ", "))
-                        .padding(.vertical)
+                    HStack {
+                        ForEach(resort.facilities, id: \.self) { facility in
+                            Facility.icon(for: facility)
+                                .font(.title)
+                        }
+                    }
+                    .padding(.vertical)
                 }
                 .padding(.horizontal)
             }
