@@ -12,6 +12,8 @@ struct ResortDetailsView: View {
     
     let resort: Resort
     
+    /// Returns a word describing the resort size.
+    /// Expects the resort size as a number in the range 1...3.
     private var size: String {
         switch resort.size {
         case 1:
@@ -22,7 +24,9 @@ struct ResortDetailsView: View {
             return "Large"
         }
     }
-    
+
+    /// Returns a string of $ symbols based on the resort price.
+    /// Expects the resort price as a number in the range 1...5.
     private var price: String {
         String(repeating: "$", count: resort.price)
     }
