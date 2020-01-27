@@ -26,12 +26,15 @@ struct ResortView: View {
                         if sizeClass == .compact {
                             Spacer()
                             VStack { ResortDetailsView(resort: resort) }
+                            Spacer()
                             VStack { SkiDetailsView(resort: resort) }
                             Spacer()
                         } else {
+                            Spacer().frame(height: 0)
                             ResortDetailsView(resort: resort)
-                            Spacer()
+                            Spacer().frame(height: 0)
                             SkiDetailsView(resort: resort)
+                            Spacer().frame(height: 0)
                         }
                     }
                     .font(.headline)
