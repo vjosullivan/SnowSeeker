@@ -35,6 +35,13 @@ struct ContentView: View {
                         Text("\(resort.runs) runs")
                             .foregroundColor(.secondary)
                     }
+                    .layoutPriority(1.0)
+                    if self.favourites.contains(resort) {
+                        Spacer()
+                        Image(systemName: "heart.fill")
+                        .accessibility(label: Text("This is a favorite resort"))
+                            .foregroundColor(Color.red)
+                    }
                 }
             }
             .navigationBarTitle("Resorts")
