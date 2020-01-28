@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @ObservedObject var favourites = Favourites()
+
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
 
     var body: some View {
@@ -39,6 +41,9 @@ struct ContentView: View {
 
             WelcomeView()
         }
+            // By attaching the favourites instance to the Navigation View,
+            // all views presented by the view will have access to it.
+            .environmentObject(favourites)
     }
 }
 
